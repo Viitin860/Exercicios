@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/ex1/style.css">
+<title>Survey Form</title>
+</head>
+<body>
+
+<h1 id="title">Formulário de Pesquisa</h1>
+
+<p id="description">Preencha o formulário abaixo para participar da nossa pesquisa.</p>
+
+<form id="survey-form">
+  
+  <label for="name" id="name-label">Nome:</label>
+  <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+  <label for="email" id="email-label">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+  <label for="number" id="number-label">Idade:</label>
+  <input type="number" id="number" name="number" placeholder="Digite sua idade" min="1" max="100" required>
+
+  <label for="dropdown">Escolha uma opção:</label>
+  <select id="dropdown">
+    <option value="opcao1">Ensino Superior (Noturno)</option>
+    <option value="opcao2">Ensino Superior (Integral)</option>
+    <option value="opcao3">Ensino Médio</option>
+  </select>
+
+  <fieldset>
+    <legend>Consigue vir em aulas de sábado? </legend>
+    <label>
+      <input type="radio" name="escolha" value="opcaoA"> Sim  
+    </label>
+    <label>
+      <input type="radio" name="escolha" value="opcaoB"> Não 
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Selecione suas preferências:</legend>
+    <label>
+      <input type="checkbox" name="preferencias" value="pref1"> Aulas híbridas 
+    </label>
+    <label>
+      <input type="checkbox" name="preferencias" value="pref2"> Aulas remotas
+    </label>
+    <label>
+      <input type="checkbox" name="preferencias" value="pref3"> Apenas atividades assíncronas 
+    </label>
+  <label>
+    <input type="checkbox" name="preferencias" value="pref4"> Entrega de atividades avaliativas 
+    </label>
+   <label>
+    <input type="checkbox" name="preferencias" value="pref5"> Apresentação em grupo  
+    </label>
+  </fieldset>
+
+  <label for="comments">Comentários adicionais:</label>
+  <textarea id="comments" name="comments" rows="4" placeholder="Deixe seus comentários aqui"></textarea>
+
+  <input type="submit" id="submit" value="Enviar">
+
+</form>
+</body>
+</html>

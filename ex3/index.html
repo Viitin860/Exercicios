@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="/ex3/style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>ÍNDICE</header>
+    <ul>
+      <li><a href="#1._Introdução_ao_HTML" class="nav-link">1. Introdução ao HTML</a></li>
+      <li><a href="#2._HTML_Semântico_e_Estrutura" class="nav-link">2. HTML Semântico e Estrutura</a></li>
+      <li><a href="#3._CSS_Flexível_e_Layouts_Adaptáveis" class="nav-link">3. CSS Flexível e Layouts Adaptáveis</a></li>
+      <li><a href="#4._Imagens_e_Mídia_Adaptáveis" class="nav-link">4. Imagens e Mídia Adaptáveis</a></li>
+      <li><a href="#5._Tipografia_e_Legibilidade_Responsivas" class="nav-link">5. Tipografia e Legibilidade Responsivas</a></li>
+      <li><a href="#6._Referências" class="nav-link">6. Referências</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="1._Introdução_ao_HTML">
+      <header>1. Introdução ao HTML</header>
+      <p>HTML é a abreviação de HyperText Markup Language.</p>
+      <p>HTML é a linguagem padrão para criar páginas da web.</p>
+      <p>Ela é usada para estruturar o conteúdo na web.</p>
+      <p>HTML define a estrutura da página usando marcações.</p>
+      <p>Exemplo de uma marcação HTML básica:</p>
+      <div class="boxblack">
+      <code><pre>
+      <span class="color">&lt;html&gt;</span>
+        <span class="color">&lt;body&gt;</span>
+          <span class="color">&lt;p&gt;</span>Indrodução ao HTML<span class="color">&lt;/p&gt;</span>
+        <span class="color">&lt;/body&gt;</span>
+      <span class="color">&lt;/html&gt;</span></pre></code>
+      </div> 
+      <ul>
+        <li><span>Estrutura: </span>A estrutura de um documento HTML refere-se à forma como os diferentes componentes da página são organizados. Ela é definida por uma hierarquia de elementos que representam o conteúdo e a apresentação da página. Essa estrutura é fundamental para garantir que os navegadores interpretem corretamente o conteúdo e o exibam de maneira adequada ao usuário.
+
+</li>
+<br>
+        <li><span>Marcação: </span>A marcação em HTML consiste nas tags que delimitam os diferentes elementos dentro do documento. Cada tag é responsável por indicar o início e o fim de um elemento, como <code>&lt;p&gt</code> para parágrafos ou  <code>&lt;h1&gt</code> para cabeçalhos. A marcação é essencial para que o navegador saiba como renderizar cada parte da página e para que os desenvolvedores possam entender a estrutura do conteúdo.</li>
+        <div class="boxblack">
+          <pre>
+  <span class="color">&lt;html&gt;</span>
+    <span class="color">&lt;head&gt;</span>
+      <span class="color">&lt;title&gt;</span>Exemplo de Página<span class="color">&lt;/title&gt;</span>
+    <span class="color">&lt;/head&gt;</span>
+    <span class="color">&lt;body&gt;</span>
+      <span class="color">&lt;h1&gt;</span>Bem-vindo ao Meu Site!<span class="color">&lt;/h1&gt;</span>
+      <span class="color">&lt;p&gt;</span>Esta é uma introdução ao HTML e seus elementos.<span class="color">&lt;/p&gt;</span>
+    <span class="color">&lt;/body&gt;</span>
+  <span class="color">&lt;/html&gt;</span>
+</pre>
+          </div>
+<br>
+        <li><span>Elementos: </span>Os elementos em HTML são as unidades básicas que compõem uma página web. Eles representam diferentes tipos de conteúdo, como texto, imagens, links e listas. Cada elemento é definido por uma tag de abertura e uma tag de fechamento, e pode conter outros elementos, formando uma estrutura hierárquica que organiza o conteúdo de maneira lógica e acessível.</li>
+<br>        
+        <li><span>Atributos: </span>Os atributos em HTML são informações adicionais que podem ser adicionadas aos elementos para especificar suas características e comportamento. Eles são escritos dentro da tag de abertura do elemento e geralmente aparecem na forma de pares chave-valor. Por exemplo, o atributo href em um link (<code>&lt;a&gt</code>) define o destino do link, enquanto o atributo class permite a aplicação de estilos CSS específicos ao elemento.</li>
+         <div class="boxblack">
+      <code><pre>
+ <span class="color"> &lt;a</span> <span class="color3">href=&quot;</span>https://www.freecodecamp.org/&quot;&gt;Visite nosso site!<span class="color">&lt;/a&gt;</span>
+</pre></code>
+      </div> 
+<br>        
+        <li><span>Validação: </span>A validação em HTML refere-se à verificação se o código HTML está em conformidade com as especificações da linguagem. Um código HTML válido garante que os navegadores interpretem corretamente a página web e que ela seja renderizada corretamente para os usuários. Ferramentas de validação de HTML podem ajudar a identificar erros no código que podem afetar a exibição ou o funcionamento da página.</li>
+<br>
+         
+      </ul>
+    </section>
+
+    <section class="main-section" id="2._HTML_Semântico_e_Estrutura">
+      <header>2. HTML Semântico e Estrutura</header>
+      <p>HTML semântico utiliza tags que têm significado.</p>
+      <p>Essas tags ajudam a melhorar a acessibilidade e SEO.</p>
+      <p>Exemplos de tags semânticas:</p>
+      <div class="boxblack">
+      <code><pre>
+        <span class="color2">&lt;header&gt;
+
+        &lt;footer&gt;
+
+        &lt;article&gt;
+
+        &lt;section&gt;
+
+        &lt;nav&gt;</span></pre></code>
+      </div>
+      <ul>
+        <li><span>header: </span>Define o cabeçalho de uma seção ou do documento HTML, geralmente contendo elementos como logotipos, menus de navegação e informações introdutórias.</li>
+        <div class="boxblack">
+          <pre>
+  <span class="color">&lt;html&gt;</span>
+    <span class="color">&lt;head&gt;</span>
+      <span class="color">&lt;title&gt;</span>Exemplo de Header<span class="color">&lt;/title&gt;</span>
+    <span class="color">&lt;/head&gt;</span>
+    <span class="color">&lt;body&gt;</span>
+     <span class="color2"> &lt;header&gt;</span>
+        <span class="color">&lt;h1&gt;</span>Meu Site Incrível<span class="color">&lt;/h1&gt;</span>
+        <span class="color">&lt;p&gt;</span>A melhor página para aprender HTML!<span class="color">&lt;/p&gt;</span>
+      <span class="color2">&lt;/header&gt;</span>
+    <span class="color">&lt;/body&gt;</span>
+  <span class="color">&lt;/html&gt;</span>
+</pre>
+        </div>
+        <br>
+        <li><span>footer: </span> É crucial para completar a estrutura básica de uma página web, garantindo que informações importantes, como créditos e links adicionais, sejam claramente apresentadas aos usuários.</li>
+        <div class="boxblack">
+          <pre>
+  <span class="color">&lt;html&gt;</span>
+    <span class="color">&lt;head&gt;</span>
+      <span class="color">&lt;title&gt;</span>Exemplo de Footer&lt;/title&gt;</span>
+    <span class="color">&lt;/head&gt;</span>
+    <span class="color">&lt;body&gt;</span>
+      <span class="color2">&lt;footer&gt;</span>
+        <span class="color">&lt;p&gt;&copy;</span> 2024 Meu Site. Todos os direitos reservados.<span class="color">&lt;/p&gt;</span>
+        <span class="color">&lt;p&gt;</span>Contate-nos: contato@meusite.<span class="color">com&lt;/p&gt;</span>
+      <span class="color2">&lt;/footer&gt;</span>
+    <span class="color">&lt;/body&gt;</span>
+  <span class="color">&lt;/html&gt;</span>
+</pre>
+        </div>
+        <br>
+        <li><span>article: </span>Define um conteúdo independente e autocontido dentro de um documento HTML, como uma postagem de blog, notícia ou comentário.</li>
+        <div class="boxblack">
+          <pre>
+  <span class="color">&lt;html&gt;</span>
+    <span class="color">&lt;head&gt;</span>
+      <span class="color">&lt;title&gt;</span>Exemplo de Article&lt;/title&gt;</span>
+    <span class="color">&lt;/head&gt;</span>
+    <span class="color">&lt;body&gt;</span>
+      <span class="color2">&lt;article&gt;</span>
+        <span class="color">&lt;h2&gt;Título do Artigo&lt;/h2&gt;</span>
+        <span class="color">&lt;p&gt;</span>Este é o conteúdo do artigo. Aqui você pode escrever sobre um tópico.<span class="color">&lt;/p&gt;</span>
+        <span class="color">&lt;p&gt;</span>Aqui o conteúdo pode ser bem rico e bem estruturado.<span class="color">&lt;/p&gt;
+      <span class="color2">&lt;/article&gt;</span>
+    <span class="color">&lt;/body&gt;</span>
+  <span class="color">&lt;/html&gt;</span>
+</pre>
+        </div>
+        <br>
+        <li><span>section: </span>Define uma seção temática dentro de um documento HTML, agrupando conteúdos relacionados logicamente, como blocos de texto, imagens ou outros elementos.</li>
+        <div class="boxblack">
+          <pre>
+  <span class="color">&lt;html&gt;</span>
+    <span class="color">&lt;head&gt;</span>
+      <span class="color">&lt;title&gt;</span>Exemplo de Section<span class="color">&lt;/title&gt;</span>
+    <span class="color">&lt;/head&gt;</span>
+    <span class="color">&lt;body&gt;</span>
+      <span class="color2">&lt;section&gt;</span>
+        <span class="color">&lt;h2&gt;</span>Título da Seção<span class="color">&lt;/h2&gt;</span>
+        <span class="color">&lt;p&gt;</span>Esta seção contém informações relacionadas a um tema específico. <span class="color">&lt;/p&gt;</span>
+        <span class="color">&lt;p&gt;</span>As seções ajudam a melhorar a legibilidade e a estrutura do documento.<span class="color">&lt;/p&gt;</span>
+      <span class="color2">&lt;/section&gt;</span>
+    <span class="color">&lt;/body&gt;</span>
+  <span class="color">&lt;/html&gt;</span>
+</pre>
+        </div>
+        <br>
+        <li><span>nav: </span>Define uma seção de navegação contendo links para outras páginas ou seções do site, facilitando a acessibilidade e organização da navegação.</li>
+        <div class="boxblack">
+          <pre>
+  <span class="color">&lt;html&gt;</span>
+    <span class="color">&lt;head&gt;</span>
+      <span class="color">&lt;title&gt;</span>Exemplo de Nav<span class="color">&lt;/title&gt;</span>
+    <span class="color">&lt;/head&gt;</span>
+    <span class="color">&lt;body&gt;</span>
+      <span class="color2">&lt;nav&gt;</span>
+        <span class="color">&lt;ul&gt;</span>
+          <span class="color">&lt;li&gt;&lt;a</span> <span class="color3">href</span>=&quot;index.html&quot;&gt;Início<span class="color">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="color">&lt;li&gt;&lt;a</span> <span class="color3">href</span>=&quot;sobre.html&quot;&gt;Sobre<span class="color">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="color">&lt;li&gt;&lt;a</span> <span class="color3">href</span>=&quot;serviços.html&quot;&gt;Serviços<span class="color">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="color">&lt;li&gt;&lt;a</span> <span class="color3">href</span>=&quot;contato.html&quot;&gt;Contato<span class="color">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="color">&lt;/ul&gt;</span>
+      <span class="color2">&lt;/nav&gt;</span>
+    <span class="color">&lt;/body&gt;</span>
+  <span class="color">&lt;/html&gt;</span>
+</pre>
+        </div>
+      </ul>
+    </section>
+
+    <section class="main-section" id="3._CSS_Flexível_e_Layouts_Adaptáveis">
+      <header>3. CSS Flexível e Layouts Adaptáveis</header>
+      <p>CSS é usado para estilizar e dispor elementos na página.</p>
+      <p>Flexbox e Grid são duas técnicas para criar layouts flexíveis.</p>
+      <p>Flexbox ajuda a alinhar e distribuir o espaço entre itens em um contêiner.</p>
+      <p>Grid permite criar layouts complexos com linhas e colunas.</p>
+      
+      <ul>
+        <li><span>Flexbox:</span>Flexbox é um modelo de layout bidimensional que ajuda a projetar layouts complexos de forma mais intuitiva e eficiente em termos de espaço. Ele permite alinhar, distribuir e organizar elementos dentro de um contêiner de maneira flexível, independentemente do tamanho do dispositivo ou da tela.</li>
+        <div class="boxblack">
+          <pre>
+  <span class="color">&lt;html&gt;</span>
+    <span class="color">&lt;head&gt;</span>
+      <span class="color">&lt;title&gt;</span>Exemplo de Flexbox<span class="color">&lt;/title&gt;</span>
+      <span class="color">&lt;style&gt;</span>
+        <span class="color2">.container</span> {
+          <span class="color4">display:</span> flex;
+          <span class="color4">justify-content:</span> space-between;
+          <span class="color4">background-color:</span> #f0f0f0;
+          <span class="color4">padding:</span> 10px;
+        }
+        <span class="color2">.item</span> {
+          <span class="color4">background-color:</span> #4CAF50;
+          <span class="color4">color:</span> white;
+          <span class="color4">padding:</span> 20px;
+          <span class="color4">margin:</span> 5px;
+          <span class="color4">flex:</span> 1;
+        }
+      <span class="color">&lt;/style&gt;</span>
+    <span class="color">&lt;/head&gt;</span>
+    <span class="color">&lt;body&gt;</span>
+      <span class="color">&lt;div <span class="color3">class</span>=&quot;<span class="color2">container</span>&quot;&gt;</span>
+        <span class="color">&lt;div <span class="color3">class</span>=&quot;<span class="color2">item</span>&quot;&gt;</span>Item 1<span class="color">&lt;/div&gt;</span>
+      <span class="color">&lt;/div&gt;</span>
+    <span class="color">&lt;/body&gt;</span>
+  <span class="color">&lt;/html&gt;</span>
+</pre>
+        </div>
+        <br>
+        <li><span>Grid: </span>CSS Grid Layout é um sistema bidimensional de layout que permite dividir uma página em linhas e colunas, facilitando o design de layouts complexos. Ele oferece um controle mais preciso sobre o posicionamento e o espaçamento dos elementos em relação uns aos outros, sendo especialmente útil para criar designs responsivos e adaptáveis.</li>
+        <div class="boxblack">
+<pre>
+  <span class="color">&lt;html&gt;</span>
+    <span class="color">&lt;head&gt;</span>
+      <span class="color">&lt;title&gt;</span>Exemplo de Grid<span class="color">&lt;/title&gt;</span>
+      <span class="color">&lt;style&gt;</span>
+        <span class="color2">.grid-container</span> {
+          <span class="color4">display:</span> grid;
+          <span class="color4">grid-template-columns:</span> repeat(3, 1fr);
+          <span class="color4">gap:</span> 10px;
+          <span class="color4">background-color:</span> #f0f0f0;
+          <span class="color4">padding:</span> 10px;
+        }
+        <span class="color2">.grid-item</span> {
+          <span class="color4">background-color:</span> #2196F3;
+          <span class="color4">color:</span> white;
+          <span class="color4">padding:</span> 20px;
+          <span class="color4">text-align:</span> center;
+        }
+      <span class="color">&lt;/style&gt;</span>
+    <span class="color">&lt;/head&gt;</span>
+    <span class="color">&lt;body&gt;</span>
+      <span class="color">&lt;div <span class="color3">class</span>=&quot;<span class="color2">grid-container</span>&quot;&gt;</span>
+        <span class="color">&lt;div <span class="color3">class</span>=&quot;<span class="color2">grid-item</span>&quot;&gt;</span>Item 1<span class="color">&lt;/div&gt;</span>
+      <span class="color">&lt;/div&gt;</span>
+    <span class="color">&lt;/body&gt;</span>
+  <span class="color">&lt;/html&gt;</span>
+</pre>
+        </div>
+        <br>
+        <li><span>Layout: </span>Em termos gerais, layout se refere à organização visual e estrutural de elementos em uma página web ou em qualquer outro meio de comunicação visual. Tanto Flexbox quanto Grid são técnicas de layout utilizadas em CSS para ajudar na criação de interfaces responsivas e bem estruturadas.</li>
+        <div class="boxblack">
+ <pre>
+  <span class="color">&lt;html&gt;</span>
+    <span class="color">&lt;head&gt;</span>
+      <span class="color">&lt;title&gt;</span>Exemplo de Layout<span class="color">&lt;/title&gt;</span>
+      <span class="color">&lt;style&gt;</span>
+        <span class="color2">body</span> {
+          <span class="color4">display:</span> grid;
+          <span class="color4">grid-template-areas:</span>
+            &quot;header header header&quot;
+            &quot;sidebar content content&quot;
+            &quot;footer footer footer&quot;;
+          <span class="color4">grid-template-rows:</span> auto 1fr auto;
+          <span class="color4">height:</span> 100vh;
+        }
+        <span class="color2">header</span>  {
+          <span class="color4">grid-area:</span>  header;
+          <span class="color4">background-color:</span>  #4CAF50;
+          <span class="color4">color:</span>  white;
+          <span class="color4">padding:</span>  10px;
+          <span class="color4">text-align:</span>  center;
+        }
+        <span class="color2">sidebar</span> {
+          <span class="color4">grid-area:</span> sidebar;
+          <span class="color4">background-color:</span> #2196F3;
+          <span class="color4">color:</span> white;
+          <span class="color4">padding:</span> 10px;
+        }
+        <span class="color2">content</span> {
+          <span class="color4">grid-area:</span> content;
+          <span class="color4">background-color:</span> #f0f0f0;
+          <span class="color4">padding:</span> 10px;
+        }
+        <span class="color2">footer</span> {
+          <span class="color4">grid-area:</span> footer;
+          <span class="color4">background-color:</span> #4CAF50;
+          <span class="color4">color:</span> white;
+          <span class="color4">text-align:</span> center;
+          <span class="color4">padding:</span> 10px;
+        }
+      <span class="color">&lt;/style&gt;</span>
+    <span class="color">&lt;/head&gt;</span>
+    <span class="color">&lt;body&gt;</span>
+      <span class="color">&lt;header&gt;</span>Cabeçalho<span class="color">&lt;/header&gt;</span>
+      <span class="color">&lt;sidebar&gt;</span>Barra Lateral<span class="color">&lt;/sidebar&gt;</span>
+      <span class="color">&lt;content&gt;</span>Conteúdo Principal<span class="color">&lt;/content&gt;</span>
+      <span class="color">&lt;footer&gt;</span>Rodapé<span class="color">&lt;/footer&gt;</span>
+    <span class="color">&lt;/body&gt;</span>
+  <span class="color">&lt;/html&gt;</span>
+</pre>         
+        </div>
+      </ul>
+    </section>
+
+    <section class="main-section" id="4._Imagens_e_Mídia_Adaptáveis">
+      <header>4. Imagens e Mídia Adaptáveis</header>
+      <p>As imagens devem se ajustar ao tamanho da tela.</p>
+      <p>O uso de consultas de mídia é essencial para o design responsivo.</p>
+      <p>Exemplo de consulta de mídia:</p>
+      <div class="boxblack">
+      <code><pre>
+<span class="color">@media</span> (max-width: 768px) {
+  <span class="color5">/* Estilos aplicados para telas com largura máxima de 768px */</span>
+}
+
+<span class="color2">img</span> {
+  max-width: 100%;
+}
+
+<span class="color2">object-fit:</span> cover;
+</pre></code>
+      </div>
+      <ul>
+        <li><span>Media Queries: </span>São usadas em CSS para aplicar estilos diferentes com base nas características do dispositivo, como largura da tela ou orientação, permitindo layouts responsivos.</li>
+        <br>
+        <li><span>Responsive Images: </span>Técnicas para garantir que imagens em websites se ajustem ao tamanho da tela do dispositivo do usuário, melhorando o desempenho e a experiência do usuário.</li>
+        <br>
+        <li><span>Object Fit: </span>Uma propriedade CSS que controla como o conteúdo (como imagens ou vídeos) se ajusta e é redimensionado dentro de seu contêiner, permitindo opções como preenchimento, ajuste proporcional ou cobertura total.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="5._Tipografia_e_Legibilidade_Responsivas">
+      <header>5. Tipografia e Legibilidade Responsivas</header>
+      <p>A tipografia deve ser ajustada para diferentes tamanhos de tela.</p>
+      <p>Fontes legíveis e tamanhos adequados melhoram a leitura.</p>
+      <p>Utilize unidades relativas para ajustar o tamanho das fontes.</p>
+      <p>Exemplos de tipografia e Legibilidade Responsiva: </p>
+      <div class="boxblack">
+      <code><pre>
+  <span class="color">&lt;html&gt;</span>
+    <span class="color">&lt;head&gt;</span>
+      <span class="color">&lt;title&gt;</span>Exemplo de Estilos de Fonte<span class="color">&lt;/title&gt;</span>
+      <span class="color">&lt;style&gt;</span>
+        <span class="color2">body</span> {
+          <span class="color4">font-family:</span> &quot;Arial, sans-serif&quot;; <span class="color5">/* Define a família da fonte */</span>
+          <span class="color4">font-size:</span> 16px; <span class="color5">/* Tamanho da fonte */</span>
+          <span class="color4">line-height:</span> 1.5; <span class="color5">/* Altura da linha */</span>
+          <span class="color4">color:</span> #333; <span class="color5">/* Cor do texto */</span>
+        }
+        <span class="color2">h1</span> {
+          <span class="color4">font-weight:</span> bold; <span class="color5">/* Peso da fonte */</span>
+          <span class="color4">font-size:</span> 24px; <span class="color5">/* Tamanho da fonte do cabeçalho */</span>
+        }
+        <span class="color2">p</span> {
+          <span class="color4">font-weight:</span> normal; <span class="color5">/* Peso da fonte do parágrafo */</span>
+        }
+      <span class="color">&lt;/style&gt;</span>
+    <span class="color">&lt;/head&gt;</span>
+    <span class="color">&lt;body&gt;</span>
+      <span class="color">&lt;h1&gt;</span>Exemplo de Estilos de Fonte<span class="color">&lt;/h1&gt;</span>
+      <span class="color">&lt;p&gt;</span>Este é um parágrafo com estilos de fonte aplicados.<span class="color">&lt;/p&gt;</span>
+      <span class="color">&lt;p&gt;</span>Você pode ajustar esses estilos conforme necessário para melhorar a aparência do seu site.<span class="color">&lt;/p&gt;</span>
+    <span class="color">&lt;/body&gt;</span>
+  <span class="color">&lt;/html&gt;</span>
+</pre></code>
+      </div>
+      <ul>
+        <li><span>Font Size: </span>Define o tamanho físico do texto, afetando a legibilidade e o destaque de diferentes elementos na página.</li>
+        <br>
+        <li><span>Line Height: </span>Determina a altura da linha entre duas linhas de texto consecutivas, influenciando na legibilidade e na estética do texto.</li>
+        <br>
+        <li><span>Font Family: </span>Conjunto de fontes ou estilos que definem o visual do texto em um site, como serif, sans-serif, monospace, entre outros.</li>
+        <br>
+        <li><span>Font Weight: </span>Indica a espessura relativa da fonte, variando de leve a pesada, e afeta o contraste e a ênfase do texto na página.
+
+
+
+</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="6._Referências">
+      <header>6. Referências</header>
+      <p>Referências são importantes para fornecer mais informações.Aqui há referencias que foram usadas para fazer esse:</p>
+      <code><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> - site educacional voltado ao aprendizado de tecnologias web.</code>
+      <code><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a>
+      - Uma plataforma de aprendizagem em evolução para tecnologias da Web e o software que alimenta a Web. </code>
+      
+      
+    </section>
+  </main>
+
+</body>
+</html>
