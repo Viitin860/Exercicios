@@ -15,7 +15,7 @@ html {
   
   
   #navbar {
-    background-color: rgb(30, 4, 78);
+    background-color: rgb(130, 101, 185);
     position: fixed;
     width: 100%;
     top: 0;
@@ -148,6 +148,7 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; 
+    padding: 10px;
   }
   
   .project-tile {
